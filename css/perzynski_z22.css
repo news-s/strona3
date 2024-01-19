@@ -1,0 +1,16 @@
+p {
+    font-size: 22pt;
+    color: red;
+}
+
+#gruby_perzynski {
+    font-size: 17pt;
+    color: green;
+    font-weight: bold;
+}
+
+#dlawszystkich_perzynski {
+    font-size: 10pt;
+    color: yellow;
+    font-family: 'Arial', sans-serif;
+}

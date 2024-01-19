@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Oliwier Perzyński" />
+        <meta name="description" content="Opis strony." />
+        <meta name="keywords" content="Oliwier Perzyński" />
+        <title>
+            Oliwier Perzyński
+        </title>
+    </head>
+    <body>
+        <ol>
+            <li>     
+                <h1>
+                    składnia teoretyczna (w ramce, konieczne wcięcia)
+                </h1>
+                <p>
+                    <div style="border: 1px solid black;">
+                        < head > <br>  
+                            (...) <br>
+                                < link rel="Stylesheet" type="text/css" href="style.css" />  <br>
+                            (...) <br>
+                        < /head > 
+                    </div>
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Gdzie wstawiany jest  styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
+                    ile razy może on występować w dokumencie, jako podłączenie stylu CSS?
+                </h1>
+                <p>
+                    W znaczniku < link >, może występować nieskończenie wiele razy.
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jak jest najprostsza forma wstawiania stylu zewnętrznego  otoczony ramką (może być tabela jedno komórkowa?
+                </h1>
+                <p>
+                    <div style="border: 1px solid black;">
+                        < link rel="stylesheet" href="sciezka" />
+                    </div>                          
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad musi być zachowana przy większej ilości dołączanych styli?
+                </h1>
+                <p>
+                    nieskończenie wiele. by te były zgodne i ułożone hierarchicznie         
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
+        są definiowane w różnych arkuszach styli podłączone do tego samego arkusza. 
+                </h1>
+                <p>
+                    Mianowicie importowany arkusz stylów ma taki sam priorytet kaskadowości (ważności), jak 
+                    arkusz do którego został zaimportowany. Innymi słowy, jeśli chcemy, aby określony arkusz 
+                    importowany  CSS był ważniejszy od wszystkich pozostałych zewnętrznych arkuszy, 
+                    możemy go dołączyć poniżej innych odwołań do arkuszy lub zaimportować w wewnętrznym 
+                    arkuszu. Import arkuszy może również być przydatny, jeśli chcemy oszczędzić wstawiania 
+                    dodatkowych znaczników < link rel="stylesheet" / >. W takim przypadku dołącza się tylko 
+                    jeden zewnętrzny plik *.css, a w nim importuje pozostałe arkusze.
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? 
+                </h1>
+                <p>
+                    Tak samo jak z Notatnikiem, kod nie jest podświetlony, nie mamy autouzupełniania itd.
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?  
+                </h1>
+                <p> 
+                    Posiadamy podświetlenie kodu np. atrybutów czy ID oraz klas, oraz posiadamy autouzupełnianie.
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli? 
+                </h1>
+                <p>
+                    .css
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia? 
+                </h1>
+                <p>
+                    <ol>
+                        <li>
+                            Łatwiej znaleźć kod jaki chcemy zmodyfikować.
+                        </li>
+                        <li>
+                            Grupowanie plików do odpowiednich folderów
+                        </li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <h1>
+                    Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? 
+                </h1>
+                <p>
+                    UWAGA1
+        Jeżeli polecenie importu znajduje się w zewnętrznym arkuszu stylów, to relatywną ścieżkę 
+        dostępu do arkusza importowanego należy konstruować względem położenia arkusza CSS, w 
+        którym jest wstawione polecenie @import, a nie względem dokumentu (X)HTML! 
+        UWAGA2
+        Wszystkie polecenia importu (może ich być kilka) muszą się znajdować zaraz na początku 
+        arkusza stylów, tzn. przed właściwymi regułami CSS, znajdującymi się w arkuszu, do którego 
+        następuje import! 
+        UWAGA3
+        W MSIE 8.0 i starszych można zagnieżdżać importowane arkusze CSS tylko do trzeciego 
+        poziomu, tzn. importowany na najwyższym poziomie arkusz może sam zaimportować nowy 
+        plik CSS, a ten z kolei jeszcze tylko jeden dodatkowy - deklaracje z następnych 
+        zagnieżdżonych plików zostaną pominięte!
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

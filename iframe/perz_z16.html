@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Oliwier Perzyński" />
+    <meta name="description" content="Opis strony." />
+    <meta name="keywords" content="Oliwier Perzyński" />
+    <title>
+        Oliwier Perzyński
+    </title>
+    <link rel="stylesheet" href="../css/perz_z15.css" />
+</head>
+
+<body>
+    <ol>
+        <li>
+            <ul>
+                <li>
+                    Opis znacznika DIV (jaki to element, składnia w ramce, zastosowanie, opis treotyczny, atrybuty
+                    tylko wymień, opisz tylko ALIGN).
+                </li>
+                <li>
+                    Element blokowy (DIV) jest elementem blokowym może zawierać wewnątrz siebie zwykły tekst, jak
+                    również inne elementy blokowe. Został on pomyślany do tworzenia obszerniejszych struktur.
+                    <table border="1">
+                        <tr>
+                            <td>
+                                ALIGN="ustawienie"
+                                Poziome ustawienie (wyrównanie) z uwzględnieniem otoczenia (zdeprecjonowane):
+                                center - wyśrodkowanie
+                                justify - wyrównanie do obu marginesów jednocześnie
+                                left - wyrównanie do lewej
+                                right - wyrównanie do prawej
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                CLASS="klasa"
+                                Przypisuje nazwę klasy (CSS) lub nazwy klas do elementu, które muszą być rozdzielone
+                                białymi znakami
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                DIR="kierunek"
+                                Kierunek tekstu:
+                                ltr - od lewej do prawej
+                                rtl - od prawej do lewej
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ID="nazwa"
+                                Przypisuje nazwę elementowi (identyfikator), która nie może się powtarzać w całym
+                                dokumencie
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                LANG="język"
+                                Informacja o języku bazowym (np.: LANG="en" oznacza angielski, LANG="pl" - polski itd.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                STYLE="styl"
+                                Informacje stylów (CSS)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                TITLE="tekst"
+                                Tekst pomocniczy
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    Opis znacznika SPAN (jaki to element, składnia w ramce, zastosowanie, opis treotyczny).
+                </li>
+                <li>
+                    Elementy wyświetlanie w linii (SPAN) jest elementem liniowym nie mogą zawierać elementów blokowych,
+                    ale mogą inne elementy wyświetlane w linii oraz zwykły tekst.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    Różnica między znacznikami DIV i SPAN.
+                </li>
+                <li>
+                    Obydwa elementy służą jedynie do wyodrębniania części struktury dokumentu, aby docelowo na przykład
+                    poprzez arkusze styli osiągnąć zamierzony wygląd strony.
+                    Span'em wyodrębniamy elementy liniowe (najczęściej fragmenty tekstu) a divem blokowe (blokowe
+                    elementy, większe fragmenty struktury składające się na układ strony)
+                    Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    Opisz oraz wymień elementy/tagi: 1)liniowe 2)blokowe 3)blokowo-liniowe.
+                </li>
+                <li>
+                    <ol>
+                        <li>
+                            liniowe – < span>, < em>, < strong>
+                                        < /strong>
+
+                                            Elementy liniowe nie spowodują przejścia do nowej linii, będą wyświetlać się
+                                            obok siebie, w jednej linii. Domyślnie, elementom liniowym przeglądarka
+                                            ustawia właściwość "display" na "inline".
+                        </li>
+                        <li>
+                            blokowe – < div>, < p>, < article>
+                                        < /article>
+                                            Elementy blokowe z kolei będą zachowywać się jak pudełka, które ustawiasz
+                                            jeden pod drugim,
+                                            a więc nigdy nie wyświetlą się obok siebie. Domyślnie, elementom blokowym
+                                            przeglądarka
+                                            ustawia właściwość "display" na "block",
+                        </li>
+                        <li>
+                            liniowo-blokowe – < input>, < textarea>
+                                    < /textarea>
+                                        Elementy liniowo-blokowe z kolei będą zachowywać się jak liniowe, jeśli chodzi o
+                                        położenie
+                                        (a więc wyświetlać będą się obok siebie), natomiast różnią się od nich tym, że
+                                        możesz nadać
+                                        im różne wielkości. Ma to sens, np. < textarea> wyświetla się jako duży
+                                            prostokąt i
+                                            zdecydowanie "wychodzi" poza pojedynczą linijkę tekstu. Domyślnie, elementom
+                                            liniowo
+                                            blokowym przeglądarka ustawia właściwość "display" na "inline-block".
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+
+</html>
